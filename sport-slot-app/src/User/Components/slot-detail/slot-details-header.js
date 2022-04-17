@@ -6,7 +6,7 @@ function SlotDetailsHeader(props){
     const {type} = props
     return(
         <div className="slot-details-header-container">
-            <img src={image} alt="" width={50} height={50}/>
+            <img src={image} alt="" width={40} height={40}/>
             <div className="slot-details-header-info">
                 <div>
                     {

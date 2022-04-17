@@ -3,6 +3,7 @@ import SlotDetailsHeader from '../../Components/slot-detail/slot-details-header'
 import {ChevronDown, ChevronUp} from 'react-bootstrap-icons'
 import ConfirmedPlayers from '../../Components/slot-detail/confirmed-players';
 import { useState } from 'react';
+import Notice from '../../Components/notice/notice'
 
 function SlotDetails(){
 
@@ -16,7 +17,7 @@ function SlotDetails(){
 
     return(
         <div className="slot-details-main-container padding-10px">
-            <div className="heading-1 text-bold">Slot details</div>
+            <h1>Slot details</h1>
             <SlotDetailsHeader type={"outdoor"}/>
             <SlotDetailsHeader type={"confirmed"}/>
             <SlotDetailsHeader type={""}/>
@@ -55,7 +56,14 @@ function SlotDetails(){
                     <>
                     <br/>
                     <p className="heading-5 text-bold">Notices <ChevronUp onClick={()=>{setNoticesOpened(false)}}/></p>
-                    <ConfirmedPlayers players={players}/>
+                    <div>
+                        <Notice type={"slot-is-booked"}/>
+                        <Notice type={"slot-has-ended"}/>
+                        <Notice type={"no-longer-available"}/>
+                        <Notice type={"player-has-exited"}/>
+                        <Notice type={"rechedule-approved"}/>
+                        <Notice type={"rechedule-rejected"}/>
+                    </div>
                     </>
                     :
                     <>

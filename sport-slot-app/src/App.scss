@@ -1,8 +1,8 @@
 $headingColor: #EF6723;
-$inputBorderColor: rgb(210,210,209);
+//$inputBorderColor: rgb(210,210,209);
 $buttonColor: rgb(55,180,74);
 $primaryTextColor: black;
-$secondaryTextColor: rgb(120,120,120);
+$secondaryTextColor: #A7A6A6;
 $whiteTextColor: white;
 $greenBackgroundColor: rgb(55,180,74);
 $greenTextColor: rgb(55,180,74);
@@ -11,15 +11,54 @@ $greyTextColor: gray;
 $greyBorder:rgb(215,215,215);
 $modalInputTextColor: rgb(230,230,230);
 
+$headingColor: #EF6723;
+$font: 'Libre Franklin';
+$inputBorderColor: #D2D2D1;
+
+#root{
+  background-color: rgb(250,251,251);
+}
 
 div, p, span{
   font-family: 'Libre Franklin';
 }
 
 .heading-1{
+  font-family: $font;
   color: $headingColor;
   font-size: 36px;
   font-weight: bold;
+}
+h1{
+  color: $headingColor;
+  font-family: 'Libre Franklin' !important;
+  font-size: 36px !important;
+  font-weight: bold !important;
+  padding: 25px 0px !important;
+}
+h4{
+  font-family: 'Libre Franklin' !important;
+  font-size: 16px !important;
+  color: #4b4b4b;
+}
+h5{
+  font-family: 'Libre Franklin' !important;
+  font-size: 12px !important;
+  color: #4b4b4b;
+}
+input, select{
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  background-size: 22px;
+  font-weight: 300;
+  list-style-type: none;
+  border-width: 1px;
+  border-color: $inputBorderColor;
+  border-style: solid;
+  border-radius: 15px;
+  color: $secondaryTextColor;
 }
 .heading-text{
   color: $headingColor;
@@ -37,7 +76,7 @@ div, p, span{
   font-size: 12px;
 }
 .heading-5{
-  font-size: 15px;
+  font-size: 16px;
 }
 .primary-text{
 
@@ -122,6 +161,23 @@ div, p, span{
   min-width: 100px;
 }
 .white-button:hover{
+  background-color: $buttonColor;
+  color: white;
+}
+.grey-button{
+  padding-left: 30px;
+  padding-right: 30px;
+  height: 30px;
+  background-color: grey;
+  border-radius: 15px;
+  border: 2px solid grey;
+  font-size: 16px;
+  color: black;
+  font-weight: bold;
+  min-width: 100px;
+  margin-left: 20px;
+}
+.grey-button:hover{
   background-color: $buttonColor;
   color: white;
 }

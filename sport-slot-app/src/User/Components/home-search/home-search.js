@@ -97,7 +97,7 @@ function HomeSearch(){
 
     return(
         <div className="home-search-container">
-            <div className="home-search-title">Play, righ away</div>
+            <h1>Play, righ away</h1>
             <div className="home-search-items">
                 <input type="text" placeholder="Dates" onFocus={(e)=>{_onFocusDate(e)}} onBlur={(e)=>{_onBlurDate(e)}} className="home-search-item"/>
                 <input type="text" placeholder="Time" onFocus={(e)=>{_onFocusTime(e)}} onBlur={(e)=>{_onBlurTime(e)}} className="home-search-item"/>

@@ -8,7 +8,7 @@ function Login(){
     return(
         <div className="login-main-container">
             <div className="login-container padding-10px">
-                <div className="login-title heading-1">Log in</div>
+                <h1>Log in</h1>
                 <div>
                     <input className="login-input" value={username} onChange={(event)=>{setUsername(event.target.value)}} type="email" placeholder="Email address"/>
                 </div>

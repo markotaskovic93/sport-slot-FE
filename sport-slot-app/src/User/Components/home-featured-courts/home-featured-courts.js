@@ -37,7 +37,7 @@ function HomeFeaturedCourts(){
     
     return(
         <div className="home-featured-courts-main-container">
-            <div className="home-featured-courts-title">Featured courts</div>
+            <h1>Featured courts</h1>
             <div className="home-featured-courts-container" id="featured-courts-container">
                 {displayedItems.map((item)=>(
                     <SlotCard key={item} slot={item}/>

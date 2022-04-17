@@ -10,6 +10,7 @@ import Footer from './User/Components/footer/footer';
 import BookingSlot from './User/Containers/BookingSlot/BookingSlot';
 import MyGames from './User/Containers/MyGames/MyGames';
 import SlotDetails from './User/Containers/SlotDetails/SlotDetails';
+import Notifications from './User/Containers/Notifications/Notifications';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="/booking" element={<BookingSlot/>}/>
           <Route path="/my_games" element={<MyGames/>}/>
           <Route path="/details" element={<SlotDetails/>}/>
+          <Route path="/notifications" element={<Notifications/>}/>
         </Routes>
         <Footer/>
       </BrowserRouter>

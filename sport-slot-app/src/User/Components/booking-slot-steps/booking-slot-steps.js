@@ -21,35 +21,35 @@ function BookingSlotSteps(){
         <AreYouSure/>
         <ConfirmationSlotCreated/>
         <ConfirmationRequestSent/>
-        <div className="heading-1 padding-10px text-bold">Reservation details</div>
+        <h1>Reservation details</h1>
         <div className="booking-slot-steps-container-1">
             <BookingSlotBuyNow slotType={"available"}/>
             <BookingSlotShareTheCost/>
         </div>
-        <div className="heading-1 padding-10px text-bold">Reservation details</div>
+        <h1>Reservation details</h1>
         <div className="booking-slot-steps-container-1">
             <BookingSlotJoinTheGroup/>
             <BookingSlotBuyNow slotType={""}/>
         </div>
         
-        <div className="heading-1 padding-10px text-bold">Invite players</div>
+        <h1>Invite players</h1>
         <div className="booking-slot-steps-container-2">
             <BookingSlotInvitePlayers/>
         </div>
     
-        <div className="heading-1 padding-10px text-bold">Total players needed</div>
+        <h1>Total players needed</h1>
         <div className="booking-slot-steps-container-3">
             <BookingSlotPlayersNeeded/>
         </div>
-        <div className="heading-1 padding-10px text-bold">Confirmation</div>
+        <h1>Confirmation</h1>
         <div className="booking-slot-steps-container-4">
             <BookingSlotConfirmation type={"pay-now"}/>
         </div>
-        <div className="heading-1 padding-10px text-bold">Confirmation</div>
+        <h1>Confirmation</h1>
         <div className="booking-slot-steps-container-4">
             <BookingSlotConfirmation type={"share-the-cost"}/>
         </div>
-        <div className="heading-1 padding-10px text-bold">Confirmation</div>
+        <h1>Confirmation</h1>
         <div className="booking-slot-steps-container-4">
             <BookingSlotConfirmation type={"join-group"}/>
         </div>

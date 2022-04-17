@@ -11,7 +11,7 @@ function HomePlayers(props){
         players.push("Player "+i)
     return(
         <div className="home-players-main-container">
-            <div className="home-players-title">Find players</div>
+            <h1>Find players</h1>
             <div className="home-players-search-container">
                 <input type="text" className="home-players-input-search" placeholder="Search"/><div className="home-players-icon-search"><Search/></div>
             </div>
