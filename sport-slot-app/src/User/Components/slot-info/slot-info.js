@@ -1,8 +1,8 @@
 import React from "react";
-import '../../Assets/Styles/BookingSlotInfo/BookingSlotInfo.scss'
+import '../../Assets/Styles/SlotInfo/SlotInfo.scss'
 import OwnerImage from '../../Assets/Images/PlayerCard/image4.png'
 
-function BookingSlotInfo(){
+function SlotInfo(){
     return(
         <div className="booking-slot-info-container">
             <div className="booking-slot-info-child">
@@ -13,11 +13,11 @@ function BookingSlotInfo(){
             </div>
             <div className="booking-slot-info-child">
                 <div>
-                    <img src={OwnerImage} alt=""/><span className="heading-3 secondary-text-color">Peter Johnson (owner)</span>
+                    <img src={OwnerImage} alt=""/><span className="heading-3 secondary-text-color owner-name">Peter Johnson (owner)</span>
                 </div>
             </div>
         </div>
     );
 }
 
-export default BookingSlotInfo
+export default SlotInfo
