@@ -3,7 +3,7 @@ import '../../Assets/Styles/Navbar/Navbar.scss'
 import {Link } from "react-router-dom";
 import { List } from "react-bootstrap-icons";
 import HeaderLogo from '../../Assets/Images/Header/sport-slot-logo.png'
-import HeaderUserButton from '../header-user-button/header-user-button'
+import NavbarUserButton from '../navbar-user-button/navbar-user-button'
 
 function Navbar(){
     const [isLogin, setIsLogin] = useState(true)
@@ -26,9 +26,8 @@ function Navbar(){
                 <div className="nav-options-lg">
                     <Link className="nav-option-lg" to="/">My games</Link>
                     <Link className="nav-option-lg" to="/">Courts</Link>
-                    <Link className="nav-option-lg" to="/">Messages</Link>
-                    <Link className="nav-option-lg" to="/">Help</Link>
-                    <Link className="nav-option-lg" to="/"><HeaderUserButton/></Link>
+                    <Link className="nav-option-lg" to="/">Players</Link>
+                    <div className="nav-option-lg"><NavbarUserButton/></div>
                 </div>
                 :
                 <div className="nav-options-lg">
@@ -64,7 +63,7 @@ function Navbar(){
                         <Link className="nav-option-lg" to="/" onClick={OpenCloseMenu}>Help</Link>
                     </div>
                     <div className="nav-user-option-xs-sm-md">
-                        <Link className="nav-option-lg" to="/" onClick={OpenCloseMenu}><HeaderUserButton/></Link>
+                        <Link className="nav-option-lg" to="/" onClick={OpenCloseMenu}><NavbarUserButton/></Link>
                     </div>
                 </>
                 :

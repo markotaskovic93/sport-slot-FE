@@ -8,15 +8,20 @@ $greenBackgroundColor: rgb(55,180,74);
 $greenTextColor: rgb(55,180,74);
 $whiteBackgroundColor: white;
 $greyTextColor: gray;
+$blueTextColor: rgb(35,167,223);
 $greyBorder:rgb(215,215,215);
 $modalInputTextColor: rgb(230,230,230);
 
 $headingColor: #EF6723;
 $font: 'Libre Franklin';
 $inputBorderColor: #D2D2D1;
+body, html{
+  min-height: 100%;
+}
 
 #root{
   background-color: rgb(250,251,251);
+  height: 100%;
 }
 
 div, p, span{
@@ -35,6 +40,12 @@ h1{
   font-size: 36px !important;
   font-weight: bold !important;
   padding: 25px 0px !important;
+}
+h3{
+  font-family: 'Libre Franklin' !important;
+  font-size: 20px !important;
+  font-weight: 100;
+  color: #4b4b4b;
 }
 h4{
   font-family: 'Libre Franklin' !important;
@@ -95,6 +106,9 @@ input, select{
 }
 .grey-text{
   color: $greyTextColor;
+}
+.blue-text{
+  color: $blueTextColor;
 }
 .black-text{
   color: black;
@@ -176,6 +190,18 @@ input, select{
   font-weight: bold;
   min-width: 100px;
   margin-left: 20px;
+}
+.orange-button{
+  padding-left: 30px;
+  padding-right: 30px;
+  height: 30px;
+  background-color: $headingColor;
+  border-radius: 15px;
+  border: 2px solid $headingColor;
+  font-size: 16px;
+  color: white;
+  font-weight: bold;
+  min-width: 100px;
 }
 .grey-button:hover{
   background-color: $buttonColor;

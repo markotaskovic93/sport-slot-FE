@@ -13,13 +13,19 @@ import SlotDetails from './User/Containers/SlotDetails/SlotDetails';
 import Notifications from './User/Containers/Notifications/Notifications';
 import Location from './User/Containers/Location/Location';
 import FindSlot from './User/Containers/FindSlot/FindSlot';
+import Account from './User/Containers/Account/Account';
+import PreviewProfile from './User/Containers/PreviewProfile/PreviewProfile';
+import OwnerAdminNavbar from './OwnerAdmin/Components/owner-admin-navbar/owner-admin-navbar';
+import OwnerAdminCourts from './OwnerAdmin/Containers/OwnerAdminCourts/OwnerAdminCourts';
+import ManageCourt from './OwnerAdmin/Containers/ManageCourt/ManageCourt';
 
 function App() {
   return (
       <BrowserRouter path="/user">
-        <Navbar/>
+        {/*<Navbar/>*/}
+        <OwnerAdminNavbar/>
         <Routes>
-          <Route path="/" element={<Login/>}/>
+          <Route path="/login" element={<Login/>}/>
           <Route path="/register" element={<Register/>}/>
           <Route path="/confirmation" element={<RegisterConfirmation/>}/>
 
@@ -30,6 +36,12 @@ function App() {
           <Route path="/notifications" element={<Notifications/>}/>
           <Route path="/find" element={<FindSlot/>}/>
           <Route path="/location" element={<Location/>}/>
+          <Route path="/account" element={<Account/>}/>
+          <Route path="/selected-profile" element={<PreviewProfile/>}/>
+
+
+          <Route path="/owner-admin-courts" element={<OwnerAdminCourts/>}/>
+          <Route path="/manage-slots" element={<ManageCourt/>}/>
         </Routes>
         <Footer/>
       </BrowserRouter>
